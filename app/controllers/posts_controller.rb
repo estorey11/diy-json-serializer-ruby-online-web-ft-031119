@@ -31,10 +31,6 @@ class PostsController < ApplicationController
     render plain: post.description
   end
   
-  def body
-    post = Post.find(params[:id])
-    render json: post.description
-  end
 
 
 private
