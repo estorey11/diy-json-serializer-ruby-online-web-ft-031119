@@ -30,6 +30,12 @@ class PostsController < ApplicationController
     post = Post.find(params[:id])
     render plain: post.description
   end
+  
+  def body
+    post = Post.find(params[:id])
+    render plain: post.description
+  end
+
 
 private
   # Use callbacks to share common setup or constraints between actions.
